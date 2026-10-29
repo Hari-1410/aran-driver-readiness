@@ -6,6 +6,8 @@ ARAN is an embedded ECG-processing and edge-inference prototype intended to expl
 
 > **Prototype only.** This code is not a medical device or a validated driver-safety system. It has not been clinically validated. Do not use its output to make medical or driving decisions.
 
+> **Publication status:** The repository currently contains project documentation only; the full STM32 source tree has not yet been uploaded. Do not clone this repository expecting a buildable firmware project until the source and vendor dependencies are present.
+
 ## Pipeline
 
 ```text
@@ -87,7 +89,9 @@ A clean build has **not** been verified in this environment. Build artifacts sho
 
 Read the [codebase audit](docs/CODEBASE_AUDIT.md) before relying on the firmware. See [reproducibility checklist](docs/REPRODUCIBILITY.md) for measurements needed before making performance claims.
 
-## Repository layout
+## Intended source layout
+
+The curated source package is organized around the following paths; these paths will be available in GitHub after the source tree is uploaded:
 
 - `Core/Inc`, `Core/Src` — application modules
 - `Drivers/` — STM32 HAL, CMSIS core and DSP dependencies
